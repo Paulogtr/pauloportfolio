@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ee92b42f7d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title>Paulo Henrique</title>
 </head>
+
 <body>
     <div class="container">
         <nav id="navbar">
             <a href="#" id="logo">‹/Paulo›</a>
-            <ul class="navbar-items">
+            <ul id="navbar-items">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+            <div class="icon-mobile">
+                <button class="btn-menu"><i class="fa-solid fa-bars" id="click-mobile"></i></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
         <header id="home">
-            <h1> Olá, eu sou 
+            <div class="plano-de-fundo">
+            <h1> Olá, eu sou
                 <br>
                 Paulo Henrique.
             </h1>
             <br>
-            <p id="write-animation">Desenvolvedor Front end</p>
+            <p id="write-animation">Desenvolvedor Front end.</p>
+        </div>
         </header>
+        <main>
+            <section id="sobre">
+                    <h2>Sobre</h2>
+                    <div id="sobre-container">
+                    <div id="sobre-image"></div>
+                    <div id="sobre-text">
+                        <p>Meu nome é Paulo Henrique, sou de Itaquaquecetuba-SP, tenho 24 anos...Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque inventore impedit adipisci repudiandae reiciendis. Aut quidem minima sit assumenda asperiores facere quaerat consequuntur! Saepe autem numquam aut. Sequi, ad.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

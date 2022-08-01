@@ -23,14 +23,14 @@ html {
     background-color: rgb(26, 25, 25);
     color: white;
     box-sizing: border-box;
-     justify-content: end; 
+    justify-content: end;
     align-items: center;
     box-shadow: 1 1 1 black;
     position: fixed;
 
 }
 
-.logo{
+.logo {
     position: absolute;
     left: 0;
 }
@@ -50,7 +50,7 @@ html {
     gap: 1em;
 }
 
-#navbar-items li a {
+.list {
     text-decoration: none;
     color: white;
     transition: .5s;
@@ -63,7 +63,7 @@ html {
 }
 
 /* icone que altera a cor de fundo da pagina*/
-#icon-day{
+#icon-day {
     color: #ffbb00;
     padding: 10px;
     font-size: 1.5em;
@@ -72,12 +72,12 @@ html {
     margin-left: 10px;
 }
 
-#btn-iconDay{
+#btn-iconDay {
     background-color: transparent;
     border: none;
 }
 
-#icon-night{
+#icon-night {
     color: yellow;
     padding: 10px;
     font-size: 1.5em;
@@ -85,7 +85,7 @@ html {
     margin-right: 4rem;
 }
 
-#btn-iconDay{
+#btn-iconDay {
     background-color: transparent;
     border: none;
 }
@@ -108,61 +108,94 @@ html {
     cursor: pointer;
 }
 
-.mobile-menu ul{
+.mobile-menu ul {
     display: none;
     color: white;
 }
 
 /* Style main*/
-header{
+header {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    margin-left: 7.5em;
+    justify-content: space-between;
 }
+
 #home h1 {
     display: block;
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 2.5em;
-    /* margin-top: 5em;
-    margin-left: 3em; */
+    color: white;
+    font-size: 3em;
     margin-top: 10rem;
-    background-color: #ffbb00;
 }
 
 #write-animation {
     display: inline-block;
     margin-top: 10px;
-    
+    visibility: hidden;
     color: #ff4500;
-    font-size: 1.5rem;
-    margin-bottom: 13em;
+    font-size: 1.8rem;
+    margin-bottom: 1.5em;
     font-weight: bold;
 }
 
-#sobre{
-    height: 100vh;
+.image-developer {
+    background-image: url(../img/developer.png);
+    background-repeat: no-repeat;
+    margin-top: 7em;
+    margin-right: 15em;
+    width: 300px;
+    height: 450px;
 }
 
-#sobre h2{
+.imagens-front-contain {
+    display: flex;
+}
+
+.imagens-front-1 {
+    background-image: url(../img/logo-html-5-1536.png);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.imagens-front-2 {
+    background-image: url(../img/logo-css-3.png);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.imagens-front-3 {
+    background-image: url(../img/logo-javascript.png);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+#sobre {
+    height: 100vh;
+    margin-top: 10em;
+}
+
+#sobre h2 {
     margin-top: 3rem;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 4rem;
-    color: rgb(197, 193, 193);
+    color: #ff4500;
 
 }
 
-#sobre-container{
-     display: flex; 
-     justify-content: center;
-     flex-wrap: wrap;
+#sobre-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#sobre-image{
+#sobre-image {
     background-image: url(../img/sobre_colorida.jpg);
     width: 300px;
     height: 500px;
@@ -172,39 +205,41 @@ header{
     margin-left: 7.5rem;
     margin-right: 30px;
     padding: 150px;
-    
+
 }
 
- #sobre-text{
+#sobre-text {
     /* background-color: aqua; */
     width: 400px;
     height: 600px;
     margin-right: 150px;
     color: #fff;
     font-size: 1.5rem;
-} 
-#sobre-text p{
+}
+
+#sobre-text p {
     margin-top: 4em;
 }
 
- .plano-de-fundo{
-    background-image: url(../img/pexels-bert-5985263.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-} 
 
-@media(max-width:993px) {
+@media(max-width:998px) {
     html {
         font-size: 90%;
     }
+    .image-developer{
+        margin-right: 10em;
+    }
+    #icon-day{
+        margin-right: 0.5em;
+    }
 }
 
-@media(max-width:809px) {
+@media(max-width:856px) {
     html {
         font-size: 80%;
+    }
+    .image-developer{
+        margin-right: 5em;
     }
 }
 

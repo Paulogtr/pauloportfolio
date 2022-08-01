@@ -1,4 +1,5 @@
 /* captura dos elementos html*/
+const titulo = document.querySelector('#home h1');
 const subtitulo = document.querySelector('#write-animation');
 const btnMenu = document.querySelector('.btn-menu');
 const containerMobileMenu = document.querySelector('.mobile-menu');
@@ -6,7 +7,7 @@ const btnBackgroundColor = document.querySelector('#btn-iconDay');
 const iconColor = document.querySelector('#icon-day');
 const bodyColor = document.querySelector('#color');
 const logo = document.querySelector('#logo');
-const navbar = document.querySelectorAll('#navbar-items > li > a');
+const navbar = document.querySelector('.list');
 
 /* animação do elemento write-animation*/
 function tipoWrite(elemento) {
@@ -17,22 +18,35 @@ function tipoWrite(elemento) {
     });
 }
 
-//tipoWrite(subtitulo);
+//tempo para inicio da write-animation
+function iniciarWrite() {
+    setTimeout(function () {
+        subtitulo.style.visibility = 'visible'
+        tipoWrite(subtitulo);
+    }, 1000);
+}
 
-
+//mudança do background da pagina
 btnBackgroundColor.addEventListener('click', function () {
+    const textoSobre = document.querySelector('#sobre p');
+    const sobre = document.querySelector('#sobre h2')
+
     if (bodyColor.style.backgroundColor === 'rgb(31, 30, 30)') {
-        bodyColor.style.backgroundColor = 'rgb(255, 255, 255)';
-        subtitulo.style.color = 'black';
+        bodyColor.style.backgroundColor = '#e2e7e3';
+        navbar.style.color = 'orangered';
+        titulo.style.color = 'orangered';
+        subtitulo.style.color = '#000';
         logo.style.color = '#fff';
-        navbar.style.color = '#FF4500';
-
-
+        sobre.style.color = '#000'
+        textoSobre.style.color = '#000'
     } else {
         bodyColor.style.backgroundColor = 'rgb(31, 30, 30)';
-        subtitulo.style.color = 'rgb(197, 193, 193)';
+        titulo.style.color = '#fff'
+        subtitulo.style.color = '#ff4500';
         logo.style.color = '#ff4500';
         navbar.style.color = '#fff';
+        sobre.style.color = '#ff4500'
+        textoSobre.style.color = '#fff'
     }
 });
 
@@ -47,10 +61,13 @@ btnMenu.addEventListener('click', function () {
 })
 
 
-
-
 //Alerta de desenvolvimento
 function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de desenvolvimeno'), 5000) }
 
-//faseDesenvolvimento()
+
+
+//chamada dos eventos
+
+iniciarWrite()
+faseDesenvolvimento()
 

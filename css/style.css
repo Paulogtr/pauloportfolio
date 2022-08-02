@@ -36,11 +36,16 @@ html {
 }
 
 #logo {
+    font-family: 'Shojumaru', cursive;
     text-decoration: none;
     margin-left: 100px;
-    color: #FF5719;
+    color: #FF5719; 
+    /* background-image: linear-gradient(to right, #ff4500, #ff4800 ,steelblue);
+    color: transparent; */
+    background-clip: text;
+    -webkit-background-clip: text;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 
 #navbar-items {
@@ -58,7 +63,7 @@ html {
 }
 
 #navbar-items li a:hover {
-    color: orangered;
+    color: #ff4500;
     text-decoration-line: underline;
 }
 
@@ -144,6 +149,11 @@ header {
     margin-right: 15em;
     width: 300px;
     height: 450px;
+
+    animation: estudando 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
 }
 
 .imagens-front-contain {
@@ -156,6 +166,12 @@ header {
     background-size: cover;
     height: 70px;
     width: 70px;
+
+    /*animação de keyframe*/
+    animation: estudo-html 6s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .imagens-front-2 {
@@ -164,15 +180,68 @@ header {
     background-size: cover;
     height: 70px;
     width: 70px;
+
+     /*animação de keyframe*/
+    animation: estudo-css 6s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .imagens-front-3 {
     background-image: url(../img/logo-javascript.png);
     background-position: center;
     background-size: cover;
-    height: 70px;
+    height: 70px; 
     width: 70px;
+
+     /*animação de keyframe*/
+    animation: estudo-js 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes estudo-js{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(550px, -90px); 
+        opacity: 0;  
+    }
+}
+
+@keyframes estudo-css{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(600px, -90px);  
+        opacity: 0; 
+       
+    }
+}
+
+
+@keyframes estudo-html{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(700px, -90px);   
+         opacity: 0;
+
+    }
+
+}
+
+/* @keyframes estudando{
+    100%{
+        transform: translateY(10px)
+    }
+} */
+
 
 #sobre, #projetos, #contato {
     height: 100vh;
@@ -185,6 +254,8 @@ header {
     font-size: 2em;
     margin-bottom: 4rem;
     color: #ff4500;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
 
 }
 
@@ -194,32 +265,86 @@ header {
 }
 
 #sobre-image {
-    background-image: url(../img/sobre_colorida.jpg);
+    background-image: url(../img/about.png);
     width: 300px;
-    height: 500px;
+    height: 407px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-left: 7.5rem;
     margin-right: 30px;
     padding: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px #000;
 
 }
 
 #sobre-text {
-    /* background-color: aqua; */
-    width: 500px;
-    height: 600px;
-    margin-right: 150px;
+    width: 550px;
+    height: 407px;
+    margin-right: 7.5rem;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    border-radius: 10px;
+    background-color: #71f8dd21;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5); */
 }
 
 #sobre-text p {
-    margin-top: 4em;
+    padding: 15px;
+    /* margin-top: 4em; */
+    text-indent: 17px;
+}
+
+#curriculo{
+    font-weight: 500;
+    text-align: end;
+}
+
+#curriculo a{
+    text-decoration: none;
+    color: #ffff;
+    background-color: #ff4500;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.678);
+    transition: 0.2s;
+}
+
+#curriculo a:hover{
+    padding: 12px;
+    color: #000;
+}
+
+#links-web{
+    margin-top:5em;
+    text-align: center;
+}
+
+.fa-linkedin{
+    color: #0e76a8;
+}
+
+
+#links-web a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 3em;
+    margin: 5px;
 }
 
 /* section projetos*/
+
+#projetos h2{
+    margin-top: 10em;
+}
 
 
 @media(max-width:998px) {
@@ -239,6 +364,40 @@ header {
     #sobre-text{
         margin: auto;
     } */
+
+    @keyframes estudo-js{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translate(350px, -90px); 
+            opacity: 0;  
+        }
+    }
+    
+    @keyframes estudo-css{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translate(400px, -90px);  
+            opacity: 0; 
+           
+        }
+    }
+    
+    
+    @keyframes estudo-html{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translate(500px, -90px);   
+             opacity: 0;
+    
+        }
+    
+    }
 
 }
 
@@ -261,6 +420,40 @@ header {
     #sobre-text{
         margin: auto auto;
         text-align: center;
+        height: auto;
+    }
+
+    @keyframes estudo-js{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translateX(250px); 
+            opacity: 0;  
+        }
+    }
+    
+    @keyframes estudo-css{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translateX(300px);  
+            opacity: 0; 
+           
+        }
+    }
+    
+    @keyframes estudo-html{
+        0%{
+            transform: translate(0,0);
+        }
+        100%{
+            transform: translateX(400px);   
+             opacity: 0;
+    
+        }
+    
     }
 }
 
@@ -333,4 +526,29 @@ header {
         display: none;
     }
 
+    #sobre-text{
+        height: auto;
+        width: auto;
+    }
+
+    .imagens-front-1, .imagens-front-2, .imagens-front-3{
+        animation: none;
+    }
+
+    header{
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    #home h1{
+        margin-top: 5em;
+    }
+
+    #sobre-image{
+        width: 250px;
+        height: 407px;
+    }
 }

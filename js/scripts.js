@@ -75,6 +75,6 @@ function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de de
 //chamada dos eventos
 
 iniciarWrite()
-faseDesenvolvimento()
+//faseDesenvolvimento()
 
 

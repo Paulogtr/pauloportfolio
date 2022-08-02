@@ -53,9 +53,15 @@ btnBackgroundColor.addEventListener('click', function () {
 
 //ação de clique do botão de display do menu mobile
 btnMenu.addEventListener('click', function () {
+    const list = document.querySelectorAll('mobile-menu ul li a');
+
     if (containerMobileMenu.style.display === 'none') {
         containerMobileMenu.style.display = 'block';
-    } else {
+    } else if(list === true){
+        console.log('esta funcionando')
+    }
+       
+    else {
         containerMobileMenu.style.display = 'none';
     }
 })
@@ -70,4 +76,5 @@ function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de de
 
 iniciarWrite()
 faseDesenvolvimento()
+
 

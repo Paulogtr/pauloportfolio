@@ -69,7 +69,6 @@ html {
     font-size: 1.5em;
     cursor: pointer;
     margin-right: 4rem;
-    margin-left: 10px;
 }
 
 #btn-iconDay {
@@ -92,7 +91,7 @@ html {
 
 
 .icon-mobile {
-    margin-right: 100px;
+    margin-right: 5px;
     padding: 10px;
     display: none;
 }
@@ -175,12 +174,12 @@ header {
     width: 70px;
 }
 
-#sobre {
+#sobre, #projetos, #contato {
     height: 100vh;
     margin-top: 10em;
 }
 
-#sobre h2 {
+#sobre h2, #projetos h2, #contato h2{
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -192,7 +191,6 @@ header {
 #sobre-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #sobre-image {
@@ -210,7 +208,7 @@ header {
 
 #sobre-text {
     /* background-color: aqua; */
-    width: 400px;
+    width: 500px;
     height: 600px;
     margin-right: 150px;
     color: #fff;
@@ -221,29 +219,52 @@ header {
     margin-top: 4em;
 }
 
+/* section projetos*/
+
 
 @media(max-width:998px) {
     html {
-        font-size: 90%;
+        font-size: 80%;
     }
+
     .image-developer{
         margin-right: 10em;
     }
     #icon-day{
         margin-right: 0.5em;
     }
+    /* #sobre-image{
+        margin: auto;
+    }
+    #sobre-text{
+        margin: auto;
+    } */
+
 }
 
 @media(max-width:856px) {
     html {
-        font-size: 80%;
+        font-size: 70%;
     }
     .image-developer{
         margin-right: 5em;
     }
+    #sobre-container{
+        display: block;
+      
+    }
+
+    #sobre-image{
+        margin: auto auto;
+        height: 100%;
+    }
+    #sobre-text{
+        margin: auto auto;
+        text-align: center;
+    }
 }
 
-@media(max-width:777px) {
+@media(max-width:790px) {
     html {
         font-size: 70%;
     }
@@ -252,15 +273,21 @@ header {
         display: none;
     }
 
+
     .icon-mobile {
         display: block;
-        margin-right: 50px;
+        display: flex;
+        margin-right: 10px;
     }
 
-    #logo {
+    #btn-iconDay{
+       margin-right: 1em;
+    }
+
+     #logo {
         margin-left: 20px;
 
-    }
+    } 
 
     .mobile-menu {
         position: absolute;
@@ -276,9 +303,9 @@ header {
         height: 100vh;
         align-items: center;
         flex-direction: column;
-        ;
-        background-color: rgba(0, 0, 0, 0.212);
+        background-color: rgba(0, 0, 0, 0.884);
         position: fixed;
+    
     }
 
     .mobile-menu ul li {
@@ -289,7 +316,7 @@ header {
     }
 
     .mobile-menu ul li:hover {
-        background-color: rgba(0, 0, 0, 0.384);
+        background-color: rgb(0, 0, 0);
     }
 
     .mobile-menu a {
@@ -301,4 +328,9 @@ header {
     .mobile-menu a:hover {
         color: #ff4500;
     }
+
+    .image-developer{
+        display: none;
+    }
+
 }

@@ -9,11 +9,15 @@
 body {
     background-color: rgb(31, 30, 30);
     font-size: 1rem;
+
 }
 
 html {
     font-size: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
+
 
 /* style menu*/
 #navbar {
@@ -39,7 +43,7 @@ html {
     font-family: 'Shojumaru', cursive;
     text-decoration: none;
     margin-left: 100px;
-    color: #FF5719; 
+    color: #FF5719;
     /* background-image: linear-gradient(to right, #ff4500, #ff4800 ,steelblue);
     color: transparent; */
     background-clip: text;
@@ -153,7 +157,7 @@ header {
     animation: estudando 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-   
+
 }
 
 .imagens-front-contain {
@@ -181,7 +185,7 @@ header {
     height: 70px;
     width: 70px;
 
-     /*animação de keyframe*/
+    /*animação de keyframe*/
     animation: estudo-css 6s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
@@ -192,45 +196,48 @@ header {
     background-image: url(../img/logo-javascript.png);
     background-position: center;
     background-size: cover;
-    height: 70px; 
+    height: 70px;
     width: 70px;
 
-     /*animação de keyframe*/
+    /*animação de keyframe*/
     animation: estudo-js 6s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes estudo-js{
-    0%{
-        transform: translate(0,0);
+@keyframes estudo-js {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(550px, -90px); 
-        opacity: 0;  
+
+    100% {
+        transform: translate(550px, -90px);
+        opacity: 0;
     }
 }
 
-@keyframes estudo-css{
-    0%{
-        transform: translate(0,0);
+@keyframes estudo-css {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(600px, -90px);  
-        opacity: 0; 
-       
+
+    100% {
+        transform: translate(600px, -90px);
+        opacity: 0;
+
     }
 }
 
 
-@keyframes estudo-html{
-    0%{
-        transform: translate(0,0);
+@keyframes estudo-html {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(700px, -90px);   
-         opacity: 0;
+
+    100% {
+        transform: translate(700px, -90px);
+        opacity: 0;
 
     }
 
@@ -243,12 +250,16 @@ header {
 } */
 
 
-#sobre, #projetos, #contato {
+#sobre,
+#projetos,
+#contato {
     height: 100vh;
     margin-top: 10em;
 }
 
-#sobre h2, #projetos h2, #contato h2{
+#sobre h2,
+#projetos h2,
+#contato h2 {
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -302,12 +313,12 @@ header {
     text-indent: 17px;
 }
 
-#curriculo{
+#curriculo {
     font-weight: 500;
     text-align: end;
 }
 
-#curriculo a{
+#curriculo a {
     text-decoration: none;
     color: #ffff;
     background-color: #ff4500;
@@ -317,22 +328,22 @@ header {
     transition: 0.2s;
 }
 
-#curriculo a:hover{
+#curriculo a:hover {
     padding: 12px;
     color: #000;
 }
 
-#links-web{
-    margin-top:5em;
+#links-web {
+    margin-top: 5em;
     text-align: center;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     color: #0e76a8;
 }
 
 
-#links-web a{
+#links-web a {
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -342,9 +353,61 @@ header {
 
 /* section projetos*/
 
-#projetos h2{
+
+
+#projetos h2 {
     margin-top: 10em;
 }
+
+#container-slide {
+    position: relative;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+
+.slides-gallery {
+    display: flex;
+    flex-flow: nowrap;
+    gap: 5px;
+
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.671);
+}
+
+
 
 
 @media(max-width:998px) {
@@ -352,12 +415,14 @@ header {
         font-size: 80%;
     }
 
-    .image-developer{
+    .image-developer {
         margin-right: 10em;
     }
-    #icon-day{
+
+    #icon-day {
         margin-right: 0.5em;
     }
+
     /* #sobre-image{
         margin: auto;
     }
@@ -365,38 +430,41 @@ header {
         margin: auto;
     } */
 
-    @keyframes estudo-js{
-        0%{
-            transform: translate(0,0);
+    @keyframes estudo-js {
+        0% {
+            transform: translate(0, 0);
         }
-        100%{
-            transform: translate(350px, -90px); 
-            opacity: 0;  
-        }
-    }
-    
-    @keyframes estudo-css{
-        0%{
-            transform: translate(0,0);
-        }
-        100%{
-            transform: translate(400px, -90px);  
-            opacity: 0; 
-           
+
+        100% {
+            transform: translate(350px, -90px);
+            opacity: 0;
         }
     }
-    
-    
-    @keyframes estudo-html{
-        0%{
-            transform: translate(0,0);
+
+    @keyframes estudo-css {
+        0% {
+            transform: translate(0, 0);
         }
-        100%{
-            transform: translate(500px, -90px);   
-             opacity: 0;
-    
+
+        100% {
+            transform: translate(400px, -90px);
+            opacity: 0;
+
         }
-    
+    }
+
+
+    @keyframes estudo-html {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(500px, -90px);
+            opacity: 0;
+
+        }
+
     }
 
 }
@@ -405,55 +473,61 @@ header {
     html {
         font-size: 70%;
     }
-    .image-developer{
+
+    .image-developer {
         margin-right: 5em;
     }
-    #sobre-container{
+
+    #sobre-container {
         display: block;
-      
+
     }
 
-    #sobre-image{
+    #sobre-image {
         margin: auto auto;
         height: 100%;
     }
-    #sobre-text{
+
+    #sobre-text {
         margin: auto auto;
         text-align: center;
         height: auto;
     }
 
-    @keyframes estudo-js{
-        0%{
-            transform: translate(0,0);
+    @keyframes estudo-js {
+        0% {
+            transform: translate(0, 0);
         }
-        100%{
-            transform: translateX(250px); 
-            opacity: 0;  
-        }
-    }
-    
-    @keyframes estudo-css{
-        0%{
-            transform: translate(0,0);
-        }
-        100%{
-            transform: translateX(300px);  
-            opacity: 0; 
-           
+
+        100% {
+            transform: translateX(250px);
+            opacity: 0;
         }
     }
-    
-    @keyframes estudo-html{
-        0%{
-            transform: translate(0,0);
+
+    @keyframes estudo-css {
+        0% {
+            transform: translate(0, 0);
         }
-        100%{
-            transform: translateX(400px);   
-             opacity: 0;
-    
+
+        100% {
+            transform: translateX(300px);
+            opacity: 0;
+
         }
-    
+    }
+
+    @keyframes estudo-html {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translateX(400px);
+            opacity: 0;
+
+        }
+
     }
 }
 
@@ -473,14 +547,14 @@ header {
         margin-right: 10px;
     }
 
-    #btn-iconDay{
-       margin-right: 1em;
+    #btn-iconDay {
+        margin-right: 1em;
     }
 
-     #logo {
+    #logo {
         margin-left: 20px;
 
-    } 
+    }
 
     .mobile-menu {
         position: absolute;
@@ -498,7 +572,7 @@ header {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.884);
         position: fixed;
-    
+
     }
 
     .mobile-menu ul li {
@@ -522,20 +596,22 @@ header {
         color: #ff4500;
     }
 
-    .image-developer{
+    .image-developer {
         display: none;
     }
 
-    #sobre-text{
+    #sobre-text {
         height: auto;
         width: auto;
     }
 
-    .imagens-front-1, .imagens-front-2, .imagens-front-3{
+    .imagens-front-1,
+    .imagens-front-2,
+    .imagens-front-3 {
         animation: none;
     }
 
-    header{
+    header {
         align-items: center;
         justify-content: center;
         width: auto;
@@ -543,11 +619,11 @@ header {
         margin: 0;
     }
 
-    #home h1{
+    #home h1 {
         margin-top: 5em;
     }
 
-    #sobre-image{
+    #sobre-image {
         width: 250px;
         height: 407px;
     }

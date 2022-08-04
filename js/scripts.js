@@ -66,9 +66,34 @@ btnMenu.addEventListener('click', function () {
     }
 })
 
+//navegação dos slide da section projetos
+function scrollBar(){
+    const scroll = document.querySelector('.gallery-wrapper');
+    const controlR = document.querySelector('.arrow-right');
+    const controlL = document.querySelector('.arrow-left');
+    const item = document.querySelectorAll('.item')
+
+    controlR.addEventListener('click', function(){
+        
+        scroll.scrollBy(500,0);
+        
+        if(scroll.scrollBy(0,0) != scroll.scrollBy(1000)){
+            scroll.scrollBy(0,0)
+        }
+        
+    })
+
+    controlL.addEventListener('click', function(){
+        scroll.scrollBy(-1200,0)
+    })
+    
+}
+
+
 
 //Alerta de desenvolvimento
 function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de desenvolvimeno'), 5000) }
+
 
 
 
@@ -78,3 +103,5 @@ iniciarWrite()
 //faseDesenvolvimento()
 
 
+
+scrollBar()

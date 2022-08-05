@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(0, 0, 0);
     font-size: 1rem;
 
 }
@@ -259,7 +259,8 @@ header {
 
 #sobre h2,
 #projetos h2,
-#contato h2 {
+#contato h2,
+#qualificacoes h2 {
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -313,6 +314,7 @@ header {
     text-indent: 17px;
 }
 
+
 #curriculo {
     font-weight: 500;
     text-align: end;
@@ -332,6 +334,8 @@ header {
     padding: 12px;
     color: #000;
 }
+
+
 
 #links-web {
     margin-top: 5em;
@@ -353,16 +357,26 @@ header {
 
 /* section projetos*/
 
+#projetos{
+    background-color: rgb(19, 19, 19);
+}
 
+#projetos p{
+    color: #ff4500;
+    text-align: center;
+    font-size: 3em;
+    height: 20px;
+}
 
 #projetos h2 {
-    margin-top: 10em;
+    margin-top: 3em;
 }
 
 #container-slide {
     position: relative;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2.8em; 
+    margin-right: 2.8em; 
+
 }
 
 .gallery-wrapper {
@@ -407,8 +421,70 @@ header {
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.671);
 }
 
+#qualificacoes{
+    background-image: url(../img/pexels-pixabay-459654.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#contato{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.label{
+   background-color: #ff4500;
+   width: 500px;
+}
+
+#name-contato, #email-contato, #mensagem-contato{
+    background-color: #fff;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+}
 
 
+footer{
+    display: flex;
+    height: 15em;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+#redes-sociais, #endereco, #developer{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#redes-sociais{
+    color: #ff4500;
+}
+
+#redes-sociais a, #endereco a, #developer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#redes-sociais p{ 
+  margin-bottom: 2rem;
+}
+
+#endereco p, #developer p{
+    padding-bottom: 5px;
+}
+
+footer .fa-linkedin{
+    color: white;
+}
 
 @media(max-width:998px) {
     html {

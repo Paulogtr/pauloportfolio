@@ -75,16 +75,12 @@ function scrollBar(){
 
     controlR.addEventListener('click', function(){
         
-        scroll.scrollBy(500,0);
-        
-        if(scroll.scrollBy(0,0) != scroll.scrollBy(1000)){
-            scroll.scrollBy(0,0)
-        }
+        scroll.scrollBy(1250,0);
         
     })
 
     controlL.addEventListener('click', function(){
-        scroll.scrollBy(-1200,0)
+        scroll.scrollBy(-1250,0)
     })
     
 }
@@ -101,7 +97,4 @@ function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de de
 
 iniciarWrite()
 //faseDesenvolvimento()
-
-
-
 scrollBar()

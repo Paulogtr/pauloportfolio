@@ -255,12 +255,12 @@ header {
 #contato {
     height: 100vh;
     margin-top: 10em;
+    padding-top: 3em;
 }
 
 #sobre h2,
 #projetos h2,
-#contato h2,
-#qualificacoes h2 {
+#contato h2 {
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -340,6 +340,7 @@ header {
 #links-web {
     margin-top: 5em;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .fa-linkedin {
@@ -357,25 +358,26 @@ header {
 
 /* section projetos*/
 
-#projetos{
+#projetos {
     background-color: rgb(19, 19, 19);
 }
 
-#projetos p{
+#projetos p {
     color: #ff4500;
     text-align: center;
     font-size: 3em;
     height: 20px;
 }
 
-#projetos h2 {
+/* #projetos h2 {
     margin-top: 3em;
-}
+} */
 
 #container-slide {
     position: relative;
-    margin-left: 2.8em; 
-    margin-right: 2.8em; 
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -406,7 +408,7 @@ header {
     color: white;
     border: none;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .arrow-right {
@@ -417,38 +419,97 @@ header {
 .arrow-left:hover,
 .arrow-right:hover {
     font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.404);
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.671);
 }
 
-#qualificacoes{
+#qualificacoes {
+    display: flex;
     background-image: url(../img/pexels-pixabay-459654.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
 }
 
-#contato{
-display: flex;
-flex-direction: column;
-align-items: center;
+#qualificacoes h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #ff4500;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 2em;
 }
 
-.label{
-   background-color: #ff4500;
-   width: 500px;
+#qualificacoes-img {
+    width: 600px;
+    height: 400px;
+    background-color: #ff4500;
 }
 
-#name-contato, #email-contato, #mensagem-contato{
-    background-color: #fff;
-    width: 500px;
-    height: 40px;
-    margin-bottom: 10px;
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-contato,
+.email-contato,
+.mensagem-contato {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff4500;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    margin-bottom: 2em;
+}
+
+.name-contato label,
+.email-contato label,
+.mensagem-contato label {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1em;
+    color: white;
+}
+
+#name-contato,
+#email-contato,
+#mensagem-contato {
+    /* width: 695px;
+    height: 48px; */
+    margin-left: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #ff4500;
+    font-size: 1.2em;
+    color: #000;
+
+}
+
+.name-contato input:focus,
+.email-contato input:focus,
+#mensagem-contato {
+    outline: 0;
+}
+
+#mensagem-contato {
+    width: 700px;
+    height: 100px;
+}
+
+#mensagem-contato:focus {
+    border: none;
 }
 
 
-footer{
+footer {
     display: flex;
     height: 15em;
     background-color: rgb(26, 25, 25);
@@ -459,30 +520,37 @@ footer{
     gap: 6rem;
 }
 
-#redes-sociais, #endereco, #developer{
+#redes-sociais,
+#endereco,
+#developer {
     font-size: 1.4em;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
-#redes-sociais{
+#redes-sociais {
     color: #ff4500;
 }
 
-#redes-sociais a, #endereco a, #developer a{
+#redes-sociais a,
+#endereco a,
+#developer a {
     text-decoration: none;
     color: white;
     padding: 5px;
 }
-#redes-sociais p{ 
-  margin-bottom: 2rem;
+
+#redes-sociais p {
+    margin-bottom: 2rem;
 }
 
-#endereco p, #developer p{
+#endereco p,
+#developer p {
     padding-bottom: 5px;
+    font-size: 0.8em;
 }
 
-footer .fa-linkedin{
+footer .fa-linkedin {
     color: white;
 }
 

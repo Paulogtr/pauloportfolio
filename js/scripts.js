@@ -75,12 +75,12 @@ function scrollBar(){
 
     controlR.addEventListener('click', function(){
         
-        scroll.scrollBy(1250,0);
+        scroll.scrollBy(765,0);
         
     })
 
     controlL.addEventListener('click', function(){
-        scroll.scrollBy(-1250,0)
+        scroll.scrollBy(-765,0)
     })
     
 }

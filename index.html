@@ -97,17 +97,23 @@
             </section>
             <section id="qualificacoes">
                 <h2>Qualificações</h2>
-                <div></div>
+                <div id="qualificacoes-img"></div>
             </section>
             <section id="contato">
                 <h2>Contato</h2>
                 <form>
-                    <label for="" class="label">Nome completo:</label>
-                    <p><input type="text" name="" id="name-contato"></p>
-                    <label for="" class="label">Seu email:</label>
-                    <p><input type="text" name="" id="email-contato"></p>
-                    <label for="" class="label">Sua mensagem:</label>
-                    <p><input type="text" name="" id="mensagem-contato"></p>
+                    <div class="name-contato" for="name-contato">
+                        <label for="name-contato">Nome Completo:</label>
+                        <p><input type="text" name="name-contato" id="name-contato" autocomplete="off"></p>
+                    </div>
+                    <div class="email-contato">
+                        <label for="email-contato">Seu email:</label>
+                        <p><input type="email" name="email-contato" id="email-contato" autocomplete="off"></p>
+                    </div>
+                    <div class="mensagem-contato">
+                        <label for="email-contato">Digite aqui sua mensagem:</label>
+                        <textarea name="mensagem-contato" id="mensagem-contato" cols="30" rows="10"></textarea>
+                    </div>
                 </form>      
             </section>
         </main>
@@ -123,7 +129,6 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <span>Itaquaquecetuba</span>
                 <p>São Paulo, Brasil</p>
-                
                 <p><i class="fa-solid fa-envelope"></i><a href="#">paulo_h_1994@hotmail.com</a></p>
             </div>
             <div id="developer">

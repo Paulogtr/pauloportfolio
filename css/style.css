@@ -405,7 +405,7 @@ header {
 
 
 .arrow-left,
-.arrow-right {
+.arrow-right,.controlL,.controlR {
     position: absolute;
     top: 0;
     left: 0;
@@ -420,13 +420,13 @@ header {
     transition: 0.2s;
 }
 
-.arrow-right {
+.arrow-right,.controlR {
     left: auto;
     right: 0;
 }
 
 .arrow-left:hover,
-.arrow-right:hover {
+.arrow-right:hover,.controlL:hover,.controlR:hover {
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.342);
 }
@@ -435,6 +435,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 3px solid transparent;
     width: 100%;
     height: auto;
@@ -442,9 +443,6 @@ header {
     background-color: rgb(2, 69, 78);
 }
 
-/* .projetos img{
-    width: 100%;
-}  */
 
 .projeto-text{
     background-color: rgb(3, 107, 121); 
@@ -454,20 +452,21 @@ header {
 }
 
 .projeto-text p{
-    padding-top: 10px;
+    font-size: 1.3em;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
 .projeto-text a{
     text-decoration: none;
+    font-size: 1.3em;
     color: white;
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
-     border: 1px solid #ff440069; 
+     border: 1px solid #ff440000; 
     border-radius: 5px ;
     transition: 0.5s;
-    width: 100%;
 }
 
 .projeto-text a:hover{
@@ -515,6 +514,7 @@ header {
     align-items: center;
     height: 100vh;
     padding-top: 2em;
+    width: 100%;
 }
 
 .name-contato,
@@ -557,10 +557,10 @@ header {
     outline: 0;
 }
 
-#mensagem-contato {
+    #mensagem-contato {
     width: 700px;
     height: 100px;
-}
+} 
 
 #mensagem-contato:focus {
     border: none;
@@ -670,10 +670,7 @@ footer {
 
     }
 
-    .projetos img{
-        width: 200px;
-        height: 100px;
-    }
+
 
 }
 
@@ -705,11 +702,6 @@ footer {
         text-align: center;
         height: auto;
         margin-bottom: 15px;
-    }
-
-    .projetos img{
-        width: 150px;
-        height: 100px;
     }
 
 
@@ -748,6 +740,10 @@ footer {
 
         }
 
+    }
+
+    .projeto-text{
+        font-size: 1.3em;
     }
 }
 
@@ -872,12 +868,26 @@ footer {
         height: 200px;
     }
     #mensagem-contato {
-        width: 400px;
-        height: 50px;
+        width: 250px;
+        height: auto;
     }
 
     .projetos img{
-        width: 100px;
-        height: 50px;
+        width: 300px;
+        height: 150px;
     }
+    .projeto-text{
+        font-size: 1.3em;
+        height: 100px;
+    }
+
+    #qualificacoes, #projetos, #contato{
+        margin-top: 3em;
+        height: auto;
+    }
+
+    #qualificacoes{
+       padding:3em;
+    }
+
 }

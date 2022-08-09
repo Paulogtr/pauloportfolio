@@ -93,15 +93,17 @@ function scrollBar() {
 
     controlR.addEventListener('click', function () {
 
-        scroll.scrollBy(765, 0);
-
+        scroll.scrollBy(312, 0);
+        scroll.draggable()
     })
 
     controlL.addEventListener('click', function () {
-        scroll.scrollBy(-765, 0)
+        scroll.scrollBy(-312, 0)
     })
 
 }
+
+
 
 
 

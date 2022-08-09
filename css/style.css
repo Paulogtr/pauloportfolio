@@ -352,6 +352,10 @@ header {
     color: #0e76a8;
 }
 
+#links-web a .fa-github{
+    color: #7700ff;
+}
+
 
 #links-web a {
     text-decoration: none;
@@ -361,18 +365,24 @@ header {
     margin: 5px;
 }
 
+#links-web a:hover{
+    font-size: 3.2em;
+}
+
 
 /* section projetos*/
 
 #projetos {
     background-color: rgba(19, 19, 19, 0.55);
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, rgba(0, 225, 255, 0.379), transparent) 1;
 }
 
 
 
 #container-slide {
     position: relative;
-    width: 1050px;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -383,7 +393,7 @@ header {
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: 1s;
-    height: auto;
+    width: 90vw;
 }
 
 
@@ -391,7 +401,6 @@ header {
     display: flex;
     flex-flow: nowrap;
     gap: 5px; 
-    height: auto;
 }
 
 
@@ -423,15 +432,24 @@ header {
 }
 
 .projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 3px solid transparent;
+    width: 100%;
     height: auto;
     text-align: center;
+    background-color: rgb(2, 69, 78);
 }
 
+/* .projetos img{
+    width: 100%;
+}  */
+
 .projeto-text{
-    background-color: rgba(0, 225, 255, 0.379);
+    background-color: rgb(3, 107, 121); 
     color: white;
-    width: 312px;
+    width: 100%;
     height: 100px;
 }
 
@@ -446,13 +464,15 @@ header {
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
-    border: 1px solid #fff;
+     border: 1px solid #ff440069; 
     border-radius: 5px ;
     transition: 0.5s;
+    width: 100%;
 }
 
 .projeto-text a:hover{
-    background: linear-gradient(to right, #ff4500,rgb(1, 232, 248), rgb(37, 0, 248)) ;
+    background: #FF4500;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
     border: transparent;
 }
 
@@ -483,11 +503,11 @@ header {
     font-size: 2em;
 }
 
-#qualificacoes-img {
-    width: 600px;
-    height: 400px;
+/* #qualificacoes-img {
+    width: 50rem;
+    height: 30rem;
     background-color: #ff4500;
-}
+} */
 
 #contato {
     display: flex;
@@ -503,7 +523,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #ff4500;
-    border-radius: 10px;
+    border-radius: 8px;
     height: auto;
     width: auto;
     margin-bottom: 2em;
@@ -521,8 +541,6 @@ header {
 #name-contato,
 #email-contato,
 #mensagem-contato {
-    /* width: 695px;
-    height: 48px; */
     margin-left: 5px;
     margin-top: 5px;
     border: none;
@@ -552,6 +570,7 @@ header {
 footer {
     display: flex;
     height: 15em;
+    width: 100%;
     background-color: rgb(26, 25, 25);
     color: white;
     text-decoration: none;
@@ -565,10 +584,12 @@ footer {
 #redes-sociais,
 #endereco,
 #developer {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+
+
 
 #redes-sociais {
     color: #ff4500;
@@ -589,11 +610,13 @@ footer {
 #endereco p,
 #developer p {
     padding-bottom: 5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
-footer .fa-linkedin {
-    color: white;
+
+
+#redes-sociais a:hover, .fa-linkedin:hover{
+    color: #ff4500;
 }
 
 @media(max-width:998px) {
@@ -609,12 +632,6 @@ footer .fa-linkedin {
         margin-right: 0.5em;
     }
 
-    /* #sobre-image{
-        margin: auto;
-    }
-    #sobre-text{
-        margin: auto;
-    } */
 
     @keyframes estudo-js {
         0% {
@@ -653,6 +670,11 @@ footer .fa-linkedin {
 
     }
 
+    .projetos img{
+        width: 200px;
+        height: 100px;
+    }
+
 }
 
 @media(max-width:856px) {
@@ -664,6 +686,9 @@ footer .fa-linkedin {
         margin-right: 5em;
     }
 
+    #sobre{
+        height: auto;
+    }
     #sobre-container {
         display: block;
 
@@ -672,13 +697,22 @@ footer .fa-linkedin {
     #sobre-image {
         margin: auto auto;
         height: 100%;
+        margin-bottom:15px;
     }
 
     #sobre-text {
         margin: auto auto;
         text-align: center;
         height: auto;
+        margin-bottom: 15px;
     }
+
+    .projetos img{
+        width: 150px;
+        height: 100px;
+    }
+
+
 
     @keyframes estudo-js {
         0% {
@@ -809,8 +843,41 @@ footer .fa-linkedin {
         margin-top: 5em;
     }
 
+    #sobre{
+        height: auto;
+    }
     #sobre-image {
         width: 250px;
         height: 407px;
+    }
+
+    #sobre-container {
+        display: block;
+
+    }
+
+    #sobre-image {
+        margin: auto auto;
+        height: 100%;
+    }
+
+    #sobre-text {
+        width: 70vw;
+        text-align: center;
+        height: auto;
+    }
+
+    #qualificacoes img{
+        width: 300px;
+        height: 200px;
+    }
+    #mensagem-contato {
+        width: 400px;
+        height: 50px;
+    }
+
+    .projetos img{
+        width: 100px;
+        height: 50px;
     }
 }

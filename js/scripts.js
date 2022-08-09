@@ -29,26 +29,42 @@ function iniciarWrite() {
 //mudança do background da pagina
 btnBackgroundColor.addEventListener('click', function () {
     const textoSobre = document.querySelector('#sobre p');
-    const sobre = document.querySelector('#sobre h2')
-    const backColor = document.querySelectorAll('.backColor')
+    const backSobre = document.querySelector('#sobre');
+    const backLinksWeb = document.querySelector('#links-web')
+    const backProjetos = document.querySelector('#projetos')
+    const backProjetosImg = document.querySelectorAll(".projetos")
+    const backQualificacoes = document.querySelector('#qualificacoes')
 
     if (bodyColor.style.backgroundColor === 'rgb(0, 0, 0)') {
-        backColor.style.backgroundColor  = '#e2e7e3';
-         bodyColor.style.backgroundColor = '#e2e7e3';
-         navbar.style.color = 'orangered';
-         titulo.style.color = 'orangered';
-         subtitulo.style.color = '#000';
-         logo.style.color = '#fff';
-         sobre.style.color = '#000'
-         textoSobre.style.color = '#000'
+        bodyColor.style.backgroundColor = '#f0f0ff';
+        navbar.style.color = 'orangered';
+        titulo.style.color = 'orangered';
+        subtitulo.style.color = '#000';
+        logo.style.color = '#f0f0ff';
+        textoSobre.style.color = '#000';
+        backSobre.style.background = '#f0f0ff'
+        backLinksWeb.style.backgroundColor = '#f0f0ff';
+        backProjetos.style.backgroundColor = '#f0f0ff';
+        backProjetos.style.border = 'none';
+        backProjetosImg.forEach((el) => {
+            el.style.backgroundColor = 'transparent'
+        })
+        backQualificacoes.style.backgroundColor = '#f0f0ff';
     } else {
         bodyColor.style.backgroundColor = 'rgb(0, 0, 0)';
-         titulo.style.color = '#fff'
-         subtitulo.style.color = '#ff4500';
-         logo.style.color = '#ff4500';
-         navbar.style.color = '#fff';
-         sobre.style.color = '#ff4500'
-        textoSobre.style.color = '#fff'
+        titulo.style.color = '#f0f0ff';
+        subtitulo.style.color = '#ff4500';
+        logo.style.color = '#ff4500';
+        navbar.style.color = '#f0f0ff';
+        textoSobre.style.color = '#f0f0ff';
+        backSobre.style.background = 'radial-gradient(rgba(0, 225, 255, 0.379),black)';
+        backLinksWeb.style.backgroundColor = '#000';
+        backProjetos.style.backgroundColor = '#000';
+        backProjetos.style.border = '';
+        backProjetosImg.forEach((el) => {
+            el.style.backgroundColor = 'rgb(2, 69, 78)'
+        })
+        backQualificacoes.style.backgroundColor = 'rgb(26, 25, 25)';
     }
 });
 
@@ -59,32 +75,32 @@ btnMenu.addEventListener('click', function () {
 
     if (containerMobileMenu.style.display === 'none') {
         containerMobileMenu.style.display = 'block';
-    } else if(list === true){
+    } else if (list === true) {
         console.log('esta funcionando')
     }
-       
+
     else {
         containerMobileMenu.style.display = 'none';
     }
 })
 
 //navegação dos slide da section projetos
-function scrollBar(){
+function scrollBar() {
     const scroll = document.querySelector('.gallery-wrapper');
     const controlR = document.querySelector('.arrow-right');
     const controlL = document.querySelector('.arrow-left');
     const item = document.querySelectorAll('.item')
 
-    controlR.addEventListener('click', function(){
-        
-        scroll.scrollBy(765,0);
-        
+    controlR.addEventListener('click', function () {
+
+        scroll.scrollBy(765, 0);
+
     })
 
-    controlL.addEventListener('click', function(){
-        scroll.scrollBy(-765,0)
+    controlL.addEventListener('click', function () {
+        scroll.scrollBy(-765, 0)
     })
-    
+
 }
 
 

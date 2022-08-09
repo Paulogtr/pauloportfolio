@@ -30,22 +30,24 @@ function iniciarWrite() {
 btnBackgroundColor.addEventListener('click', function () {
     const textoSobre = document.querySelector('#sobre p');
     const sobre = document.querySelector('#sobre h2')
+    const backColor = document.querySelectorAll('.backColor')
 
-    if (bodyColor.style.backgroundColor === 'rgb(31, 30, 30)') {
-        bodyColor.style.backgroundColor = '#e2e7e3';
-        navbar.style.color = 'orangered';
-        titulo.style.color = 'orangered';
-        subtitulo.style.color = '#000';
-        logo.style.color = '#fff';
-        sobre.style.color = '#000'
-        textoSobre.style.color = '#000'
+    if (bodyColor.style.backgroundColor === 'rgb(0, 0, 0)') {
+        backColor.style.backgroundColor  = '#e2e7e3';
+         bodyColor.style.backgroundColor = '#e2e7e3';
+         navbar.style.color = 'orangered';
+         titulo.style.color = 'orangered';
+         subtitulo.style.color = '#000';
+         logo.style.color = '#fff';
+         sobre.style.color = '#000'
+         textoSobre.style.color = '#000'
     } else {
-        bodyColor.style.backgroundColor = 'rgb(31, 30, 30)';
-        titulo.style.color = '#fff'
-        subtitulo.style.color = '#ff4500';
-        logo.style.color = '#ff4500';
-        navbar.style.color = '#fff';
-        sobre.style.color = '#ff4500'
+        bodyColor.style.backgroundColor = 'rgb(0, 0, 0)';
+         titulo.style.color = '#fff'
+         subtitulo.style.color = '#ff4500';
+         logo.style.color = '#ff4500';
+         navbar.style.color = '#fff';
+         sobre.style.color = '#ff4500'
         textoSobre.style.color = '#fff'
     }
 });

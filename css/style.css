@@ -405,28 +405,29 @@ header {
 
 
 .arrow-left,
-.arrow-right,.controlL,.controlR {
+.arrow-right {
     position: absolute;
     top: 0;
     left: 0;
     right: auto;
     bottom: 0;
     padding: 20px;
-    font-size: 30px;
-    color: white;
+    font-size: 40px;
+    color: #f0f0f0;
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     transition: 0.2s;
 }
 
-.arrow-right,.controlR {
+.arrow-right {
     left: auto;
     right: 0;
 }
 
 .arrow-left:hover,
-.arrow-right:hover,.controlL:hover,.controlR:hover {
+.arrow-right:hover {
+    display: block;
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.342);
 }

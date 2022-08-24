@@ -50,6 +50,9 @@ btnBackgroundColor.addEventListener('click', function () {
             el.style.backgroundColor = 'transparent'
         })
         backQualificacoes.style.backgroundColor = '#f0f0ff';
+        iconColor.classList.remove('fa-sun')
+        iconColor.classList.add('fa-moon')
+        iconColor.style.color = 'rgb(3, 107, 121)'
     } else {
         bodyColor.style.backgroundColor = 'rgb(0, 0, 0)';
         titulo.style.color = '#f0f0ff';
@@ -65,6 +68,9 @@ btnBackgroundColor.addEventListener('click', function () {
             el.style.backgroundColor = 'rgb(2, 69, 78)'
         })
         backQualificacoes.style.backgroundColor = 'rgb(26, 25, 25)';
+        iconColor.classList.remove('fa-moon')
+        iconColor.classList.add('fa-sun')
+        iconColor.style.color = ''
     }
 });
 
@@ -73,15 +79,7 @@ btnBackgroundColor.addEventListener('click', function () {
 btnMenu.addEventListener('click', function () {
     const list = document.querySelectorAll('mobile-menu ul li a');
 
-    if (containerMobileMenu.style.display === 'none') {
-        containerMobileMenu.style.display = 'block';
-    } else if (list === true) {
-        console.log('esta funcionando')
-    }
-
-    else {
-        containerMobileMenu.style.display = 'none';
-    }
+    containerMobileMenu.classList.toggle('hide')
 })
 
 //navegação dos slide da section projetos

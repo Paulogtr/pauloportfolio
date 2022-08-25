@@ -109,7 +109,21 @@ function scrollBar() {
 function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de desenvolvimeno'), 5000) }
 
 
+const imgs = document.querySelector('#qualificacoes-img');
+const img = document.querySelectorAll('.imgs-certificados img');
 
+let idx = 0;
+
+function carrossel(){
+    idx++;
+
+    if(idx > img.length -1){
+        idx = 0;
+    }
+    imgs.style.transform = `translateX(${-idx * 312}px)`
+}
+
+ setInterval(carrossel,5000)
 
 //chamada dos eventos
 

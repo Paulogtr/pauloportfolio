@@ -249,11 +249,11 @@ header {
 
 }
 
-/* @keyframes estudando{
+ @keyframes estudando{
     100%{
         transform: translateY(10px)
     }
-} */
+} 
 
 
 #sobre,
@@ -264,13 +264,14 @@ header {
 }
 
 #sobre{
-    background: radial-gradient(rgba(0, 225, 255, 0.379),black);
+    background: radial-gradient(rgb(3, 107, 121),black);
 }
 
 #sobre h2,
 #projetos h2,
 #contato h2, 
-#skills h2{
+#skills-container h2,
+#qualificacoes h2{
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -284,18 +285,18 @@ header {
 
 #sobre-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto auto;
 }
 
 #sobre-image {
     background-image: url(../img/about.png);
-    width: 300px;
+    width: 30%;
     height: 407px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-left: 7.5rem;
-    margin-right: 30px;
     padding: 150px;
     border-radius: 10px;
     box-shadow: 0px 2px 3px #000;
@@ -303,19 +304,17 @@ header {
 }
 
 #sobre-text {
-    width: 550px;
+    width: 55% ;
     height: 407px;
-    margin-right: 7.5rem;
     color: #fff;
     font-size: 1.3rem;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     border-radius: 10px;
-    background-color: #71f8dd21;
+    background-color: rgb(3, 107, 121);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 
 #sobre-text p {
@@ -375,15 +374,59 @@ header {
 
 /* section Skills*/
 
-#skills{
+#skills-container{
     border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, rgba(0, 225, 255, 0.379), transparent) 1;
+    border-image: linear-gradient(to right, transparent, rgba(0, 225, 255, 0.379), transparent) 1; 
+}
+
+#skills{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    margin: auto auto;
 }
 #skills-logo{
-    margin: auto auto;
-    width: 65%;
-    background: #7700ff;
+    width: 200px;
+    height: 200px;
+    margin-top: 2em;
+    margin-right: 4em;
+    display:grid;
+    grid-template-columns:30px;
+    grid-template-rows:30px;
+    place-content: center;
+    border-radius: 50%;
 }
+#descrition-skills img{
+    display: none;
+}
+
+.items {
+    grid-area:1/1;
+    line-height: 30px;
+    text-align: center;
+    width: 60px;
+    animation: spin 12s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+    transform:rotate(0) translate(100px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform:rotate(1turn) translate(100px) rotate(-1turn);
+    }
+  }
+
+  #descrition-skills{
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(3, 107, 121);
+  }
+
+  #descrition-skills p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+    color: #fff;
+  }
 
 /* section projetos*/
 
@@ -503,18 +546,14 @@ header {
     border-image: linear-gradient(to right, #ff4500,rgb(1, 232, 248), rgb(37, 0, 248)) 1; 
 }
 
+/* section qualificações*/
 #qualificacoes {
     display: flex;
-    /* background-image: url(../img/pexels-pixabay-459654.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    height: 100vh;
-    /* background-color: rgb(0, 0, 0); */
     flex-direction: column;
+    height: 100vh;
     align-items: center;
     padding-top: 3em;
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(31, 31, 31);
 }
 
 #qualificacoes h2 {
@@ -526,11 +565,58 @@ header {
     font-size: 2em;
 }
 
-/* #qualificacoes-img {
-    width: 50rem;
-    height: 30rem;
-    background-color: #ff4500;
-} */
+.carrossel{
+    overflow: hidden;
+    width: 312px;
+}
+#qualificacoes-img{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.imgs-certificados{
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#qualificacoes-img img{
+    width: 300px;
+    height: 200px;
+}
+
+.imgs-certificados h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff4400;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.imgs-certificados p{
+    font-family: Arial, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    margin: auto auto;
+    color: #fff;
+}
+
+.imgs-certificados a{
+    text-decoration: none;
+}
+
+.imgs-certificados a p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0e76a8;
+    border-radius: 10px;
+}
+
+.imgs-certificados a p:hover{
+    background-color: #0b628a;
+}
 
 #contato {
     display: flex;
@@ -614,8 +700,6 @@ footer {
     text-align: center;
 }
 
-
-
 #redes-sociais {
     color: #ff4500;
 }
@@ -655,6 +739,10 @@ footer {
 
     #icon-day {
         margin-right: 0.5em;
+    }
+
+    #sobre-image{
+        margin-right: 4em;
     }
 
 
@@ -846,6 +934,7 @@ footer {
     }
 
     #sobre-text {
+        margin-top: 15px;
         height: auto;
         width: auto;
     }
@@ -890,6 +979,21 @@ footer {
         width: 70vw;
         text-align: center;
         height: auto;
+    }
+
+    #skills{
+        justify-content: center;
+    }
+
+    #descrition-skills{
+        width: 100%;
+    }
+
+    #descrition-skills img{
+        width: 20px;
+    }
+    #skills-logo{
+        display: none;
     }
 
     #qualificacoes img{

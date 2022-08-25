@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee92b42f7d.js" crossorigin="anonymous"></script>
+   <link rel="shortcut icon" href="img/icons8-código-32.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Shojumaru&display=swap');
     </style>
@@ -16,6 +17,7 @@
 
 <body id="color">
     <div class="container">
+        <!--Barra de navegação-->
         <nav id="navbar">
             <div class="logo"><a href="#" id="logo">‹/Paulo›</a></div>
             <ul id="navbar-items">
@@ -26,7 +28,7 @@
             </ul>
 
             <div class="icon-mobile">
-                <button class="btn-menu"><i id="click-mobile" class="fa-solid fa-bars" ></i></button>
+                <button class="btn-menu"><i id="click-mobile" class="fa-solid fa-bars"></i></button>
             </div>
             <div class="icon-day">
                 <button id="btn-iconDay"><i id="icon-day" class="fa-solid fa-sun"></i></button>
@@ -78,14 +80,24 @@
                         class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Paulogtr" target="_blank"><i class="fa-brands fa-github"></i></a>
             </section>
-            <section id="skills">
+            <!--Sessão de skills-->
+            <section id="skills-container">
                 <h2>Habilidades</h2>
-                <div id="skills-logo">
-                    <img src="img/logo-html-5-1536.png" alt="" width="100px">
-                    <img src="img/logo-css-3.png" alt="" width="100px">
-                    <img src="img/logo-javascript.png" alt="" width="100px">
-                    <img src="img/logo-react.png" alt="" width="100px">
-                    <img src="img/git-logo.png" alt="" width="100px">
+                <div id="skills">
+                    <div id="descrition-skills">
+                        <p><img src="img/logo-html-5-1536.png" alt="logo html5"> <strong>HTML5</strong> - sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</p>
+                        <p><img src="img/logo-css-3.png" alt="logo-css-3"> <strong>CSS3 </strong> - é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web.</p>
+                        <p><img src="img/logo-javascript.png" alt="logo-javascript"> <strong>Javascript</strong> - ou simplesmente JS, é uma linguagem de programação de uso geral, aplicada principalmente para desenvolvimento web e desenvolvimento de software.</p>
+                        <p><img src="img/git-logo.png" alt="logo git"> <strong>Git </strong>- é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+                        <p><img src="img/logo-react.png" alt="logo-react"> <strong>React</strong> - é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. (iniciando os estudos)</p>
+                    </div>
+                    <div id="skills-logo">
+                        <img src="img/logo-html-5-1536.png" alt="logo html" class="items" style="--d:0s">
+                        <img src="img/logo-css-3.png" alt="logo css3" class="items" style="--d:2.4s">
+                        <img src="img/logo-javascript.png" alt="logo JavaScript" class="items" style="--d:4.8s">
+                        <img src="img/logo-react.png" alt="logo react js" class="items" style="--d:7.2s">
+                        <img src="img/git-logo.png" alt="logo git" class="items" style="--d:9.6s">
+                    </div>
                 </div>
             </section>
 
@@ -97,8 +109,8 @@
                         <button class="arrow-left controlL"><i class="fa-solid fa-chevron-left"></i></button>
                         <button class="arrow-right controlR"><i class="fa-solid fa-chevron-right"></i></button>
                         <div class="slides-gallery">
-                            <div class="projetos"><a href="https://paulogtr.github.io/agencia-fake/" target="_blank"><img
-                                        src="img/projetoAgenciaFake.png" alt=""
+                            <div class="projetos"><a href="https://paulogtr.github.io/agencia-fake/"
+                                    target="_blank"><img src="img/projetoAgenciaFake.png" alt=""
                                         class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <h4>HTML/CSS</h4>
@@ -108,16 +120,15 @@
                                 </div>
                             </div>
                             <div class="projetos"><a href="https://paulogtr.github.io/Calculadora/" target="_blank"><img
-                                        src="img/projetoCalculadora.png" alt=""
-                                        class=" item current-item"></a>
+                                        src="img/projetoCalculadora.png" alt="" class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <h4>HTML/CSS/JavaScript</h4>
                                     <p>Calculadora desenvolvida para o treino de lógica e utilização de JS</p>
                                     <a href="https://paulogtr.github.io/Calculadora/" target="_blank">Ver mais</a>
                                 </div>
                             </div>
-                            <div class="projetos"><a href="https://paulogtr.github.io/projeto-android/" target="_blank"><img
-                                        src="img/projetoAndroid.png" alt=""
+                            <div class="projetos"><a href="https://paulogtr.github.io/projeto-android/"
+                                    target="_blank"><img src="img/projetoAndroid.png" alt=""
                                         class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <h4>HTML/CSS</h4>
@@ -125,34 +136,31 @@
                                     <a href="https://paulogtr.github.io/projeto-android/" target="_blank">Ver mais</a>
                                 </div>
                             </div>
-                            <div class="projetos"><a href="#"><img
-                                        src="https://source.unsplash.com/random/312x160?bank" alt=""
-                                        class=" item current-item"></a>
+                            <div class="projetos"><a href="#"><img src="https://source.unsplash.com/random/312x160?bank"
+                                        alt="" class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <h4>HTMl/CSS/JavaScript</h4>
-                                    <p>Projeto de uma simulação de banco, relizado para a prática de JavaScript utilizando ES6</p>
+                                    <p>Projeto de uma simulação de banco, relizado para a prática de JavaScript
+                                        utilizando ES6</p>
                                     <a href="#projetos">Ver mais</a>
                                 </div>
                             </div>
-                            <div class="projetos"><a href="#"><img
-                                        src="https://source.unsplash.com/random/312x160?car" alt=""
-                                        class=" item current-item"></a>
+                            <div class="projetos"><a href="#"><img src="https://source.unsplash.com/random/312x160?car"
+                                        alt="" class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <p>Tela de Login</p>
                                     <a href="#projetos">Ver mais</a>
                                 </div>
                             </div>
-                            <div class="projetos"><a href="#"><img
-                                        src="https://source.unsplash.com/random/312x160?cat" alt=""
-                                        class=" item current-item"></a>
+                            <div class="projetos"><a href="#"><img src="https://source.unsplash.com/random/312x160?cat"
+                                        alt="" class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <p>Tela de Login</p>
                                     <a href="#projetos">Ver mais</a>
                                 </div>
                             </div>
-                            <div class="projetos"><a href="#"><img
-                                        src="https://source.unsplash.com/random/312x160?food" alt=""
-                                        class=" item current-item"></a>
+                            <div class="projetos"><a href="#"><img src="https://source.unsplash.com/random/312x160?food"
+                                        alt="" class=" item current-item"></a>
                                 <div class="projeto-text">
                                     <p>Tela de Login</p>
                                     <a href="#projetos">Ver mais</a>
@@ -170,10 +178,45 @@
                     </div>
                 </div>
             </section>
+            <!--Section de qualificações-->
             <section id="qualificacoes">
                 <h2>Certificados</h2>
-                <div id="qualificacoes-img">
-                    <img src="img/certificado1.png" alt="">
+                <div class="carrossel">
+                    <div id="qualificacoes-img">
+                        <div class="imgs-certificados" >
+                            <img src="img/certificado1.png" alt="">
+                            <h4>JavaScript do Básico ao Avançado</h4>
+                            <p>Qualifica Cursos e MBA Online</p>
+                            <p>Emitido em jul de 2022 · Sem data de expiração
+                                Código da credencial: 62d304ebc91ab776c30d0197</p>
+                                <a href="https://appmlearn.s3.amazonaws.com/production/users/certificates/628bb4ff1986623c554a46ae/javascript-do-basico-ao-avancado-paulo-henrique-rocha-de-jesus-62d304ebc91ab776c30d0197.jpg" target="_blank"><p>Exibir crendencial <i class="fa-solid fa-up-right-from-square"></i></p></a>
+                        </div>
+                      
+                        <div class="imgs-certificados">
+                            <img src="img/certificado2.png" alt="">
+                            <h4>JavaScript do Básico ao Avançado</h4>
+                            <p>Qualifica Cursos e MBA Online</p>
+                            <p>Emitido em jul de 2022 · Sem data de expiração
+                                Código da credencial: 62d304ebc91ab776c30d0197</p>
+                                <a href="https://appmlearn.s3.amazonaws.com/production/users/certificates/628bb4ff1986623c554a46ae/javascript-do-basico-ao-avancado-paulo-henrique-rocha-de-jesus-62d304ebc91ab776c30d0197.jpg" target="_blank"><p>Exibir crendencial <i class="fa-solid fa-up-right-from-square"></i></p></a>
+                        </div>
+                        <div class="imgs-certificados">
+                            <img src="img/certificado3.png" alt="">
+                            <h4>JavaScript do Básico ao Avançado</h4>
+                            <p>Qualifica Cursos e MBA Online</p>
+                            <p>Emitido em jul de 2022 · Sem data de expiração
+                                Código da credencial: 62d304ebc91ab776c30d0197</p>
+                                <a href="https://appmlearn.s3.amazonaws.com/production/users/certificates/628bb4ff1986623c554a46ae/javascript-do-basico-ao-avancado-paulo-henrique-rocha-de-jesus-62d304ebc91ab776c30d0197.jpg" target="_blank"><p>Exibir crendencial <i class="fa-solid fa-up-right-from-square"></i></p></a>
+                        </div>
+                        <div class="imgs-certificados">
+                            <img src="img/certificado4.png" alt="">
+                            <h4>JavaScript do Básico ao Avançado</h4>
+                            <p>Qualifica Cursos e MBA Online</p>
+                            <p>Emitido em jul de 2022 · Sem data de expiração
+                                Código da credencial: 62d304ebc91ab776c30d0197</p>
+                                <a href="https://appmlearn.s3.amazonaws.com/production/users/certificates/628bb4ff1986623c554a46ae/javascript-do-basico-ao-avancado-paulo-henrique-rocha-de-jesus-62d304ebc91ab776c30d0197.jpg" target="_blank"><p>Exibir crendencial <i class="fa-solid fa-up-right-from-square"></i></p></a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Section Contato-->

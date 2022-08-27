@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     font-size: 1rem;
 
 }
@@ -18,7 +18,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -49,8 +49,6 @@ html {
     text-decoration: none;
     margin-left: 100px;
     color: #FF5719;
-    /* background-image: linear-gradient(to right, #ff4500, #ff4800 ,steelblue);
-    color: transparent; */
     background-clip: text;
     -webkit-background-clip: text;
     padding: 20px;
@@ -249,11 +247,11 @@ header {
 
 }
 
- @keyframes estudando{
-    100%{
+@keyframes estudando {
+    100% {
         transform: translateY(10px)
     }
-} 
+}
 
 
 #sobre,
@@ -263,15 +261,15 @@ header {
     padding-top: 1.5em;
 }
 
-#sobre{
-    background: radial-gradient(rgb(3, 107, 121),black);
+#sobre {
+    background: radial-gradient(rgb(3, 107, 121), black);
 }
 
 #sobre h2,
 #projetos h2,
-#contato h2, 
+#contato h2,
 #skills-container h2,
-#qualificacoes h2{
+#qualificacoes h2 {
     margin-top: 3rem;
     text-align: center;
     font-size: 2em;
@@ -304,7 +302,7 @@ header {
 }
 
 #sobre-text {
-    width: 55% ;
+    width: 55%;
     height: 407px;
     color: #fff;
     font-size: 1.3rem;
@@ -346,7 +344,7 @@ header {
 #links-web {
     margin-top: 2em;
     text-align: center;
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     height: 50px;
     margin-bottom: 40px;
 }
@@ -355,7 +353,7 @@ header {
     color: #0e76a8;
 }
 
-#links-web a .fa-github{
+#links-web a .fa-github {
     color: #7700ff;
 }
 
@@ -368,65 +366,69 @@ header {
     margin: 5px;
 }
 
-#links-web a:hover{
+#links-web a:hover {
     font-size: 3.2em;
 }
 
 /* section Skills*/
 
-#skills-container{
+#skills-container {
     border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, rgba(0, 225, 255, 0.379), transparent) 1; 
+    border-image: linear-gradient(to right, transparent, rgba(0, 225, 255, 0.379), transparent) 1;
 }
 
-#skills{
+#skills {
     display: flex;
     justify-content: space-between;
     width: 70%;
     height: 100%;
     margin: auto auto;
 }
-#skills-logo{
+
+#skills-logo {
     width: 200px;
     height: 200px;
     margin-top: 2em;
     margin-right: 4em;
-    display:grid;
-    grid-template-columns:30px;
-    grid-template-rows:30px;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: 30px;
     place-content: center;
     border-radius: 50%;
 }
-#descrition-skills img{
+
+#descrition-skills img {
     display: none;
 }
 
 .items {
-    grid-area:1/1;
+    grid-area: 1/1;
     line-height: 30px;
     text-align: center;
     width: 60px;
-    animation: spin 12s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
-    transform:rotate(0) translate(100px) rotate(0);
-  }
-  @keyframes spin {
-    100% {
-      transform:rotate(1turn) translate(100px) rotate(-1turn);
-    }
-  }
+    animation: spin 12s var(--d, 0s) linear infinite;
+    /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+    transform: rotate(0) translate(100px) rotate(0);
+}
 
-  #descrition-skills{
+@keyframes spin {
+    100% {
+        transform: rotate(1turn) translate(100px) rotate(-1turn);
+    }
+}
+
+#descrition-skills {
     width: 55%;
     height: auto;
     border-radius: 10px;
     background-color: rgb(3, 107, 121);
-  }
+}
 
-  #descrition-skills p{
+#descrition-skills p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 15px;
     color: #fff;
-  }
+}
 
 /* section projetos*/
 
@@ -456,7 +458,7 @@ header {
 .slides-gallery {
     display: flex;
     flex-flow: nowrap;
-    gap: 5px; 
+    gap: 5px;
 }
 
 
@@ -488,7 +490,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.projetos{
+.projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,27 +502,27 @@ header {
     background-color: rgb(2, 69, 78);
 }
 
-.projeto-text{
-    background-color: rgb(3, 107, 121); 
+.projeto-text {
+    background-color: rgb(3, 107, 121);
     padding-bottom: 15px;
     color: white;
     width: 100%;
     height: 100%;
 }
 
-.projeto-text h4{
+.projeto-text h4 {
     margin-top: 5px;
     font-size: 1.3em;
 }
 
-.projeto-text p{
+.projeto-text p {
     font-size: 1.2em;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
-.projeto-text a{
+.projeto-text a {
     text-decoration: none;
     font-size: 1.3em;
     font-weight: bolder;
@@ -528,13 +530,13 @@ header {
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
-    border: 1px solid #ff4400; 
-    border-radius: 5px ;
+    border: 1px solid #ff4400;
+    border-radius: 5px;
     transition: 0.5s;
 
 }
 
-.projeto-text a:hover{
+.projeto-text a:hover {
     text-decoration: none;
     color: #ffff;
     background: #FF4500;
@@ -542,8 +544,8 @@ header {
     border: transparent;
 }
 
-.projetos:hover{
-    border-image: linear-gradient(to right, #ff4500,rgb(1, 232, 248), rgb(37, 0, 248)) 1; 
+.projetos:hover {
+    border-image: linear-gradient(to right, #ff4500, rgb(1, 232, 248), rgb(37, 0, 248)) 1;
 }
 
 /* section qualificações*/
@@ -565,17 +567,18 @@ header {
     font-size: 2em;
 }
 
-.carrossel{
+.carrossel {
     overflow: hidden;
     width: 312px;
 }
-#qualificacoes-img{
+
+#qualificacoes-img {
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
 }
 
-.imgs-certificados{
+.imgs-certificados {
     width: 350px;
     text-align: center;
     padding: 5px;
@@ -583,30 +586,30 @@ header {
     border-radius: 5px;
 }
 
-#qualificacoes-img img{
+#qualificacoes-img img {
     width: 300px;
     height: 200px;
 }
 
-.imgs-certificados h4{
+.imgs-certificados h4 {
     font-family: Arial, Helvetica, sans-serif;
     color: #ff4400;
     font-size: 1.1em;
     margin-bottom: 15px;
 }
 
-.imgs-certificados p{
+.imgs-certificados p {
     font-family: Arial, Geneva, Tahoma, sans-serif;
     width: 300px;
     margin: auto auto;
     color: #fff;
 }
 
-.imgs-certificados a{
+.imgs-certificados a {
     text-decoration: none;
 }
 
-.imgs-certificados a p{
+.imgs-certificados a p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
     padding: 10px;
@@ -614,7 +617,7 @@ header {
     border-radius: 10px;
 }
 
-.imgs-certificados a p:hover{
+.imgs-certificados a p:hover {
     background-color: #0b628a;
 }
 
@@ -622,6 +625,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     height: 100vh;
     padding-top: 2em;
     width: 100%;
@@ -637,28 +641,35 @@ header {
     height: auto;
     width: auto;
     margin-bottom: 2em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
 }
 
 .name-contato label,
 .email-contato label,
 .mensagem-contato label {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 5px;
     margin-left: 10px;
     font-size: 1em;
-    color: white;
+    font-weight: 600;
+    color: rgb(8, 8, 8);
+
 }
 
 #name-contato,
 #email-contato,
-#mensagem-contato {
+#mensagem-contato,
+#contato button {
     margin-left: 5px;
     margin-top: 5px;
+    width: 98%;
+    padding: 3px;
     border: none;
     border-radius: 0 0 10px 10px;
     background-color: #ff4500;
-    font-size: 1.2em;
-    color: #000;
-
+    font-size: 1em;
+    color: #ffff;
 }
 
 .name-contato input:focus,
@@ -667,16 +678,31 @@ header {
     outline: 0;
 }
 
-    #mensagem-contato {
+#mensagem-contato {
     width: 700px;
     height: 100px;
-} 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 #mensagem-contato:focus {
     border: none;
 }
 
+#contato button {
+    cursor: pointer;
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+}
 
+#contato button:hover {
+    background-color: #da3a00;
+}
+
+/*footer da pagina*/
 footer {
     display: flex;
     height: 15em;
@@ -688,7 +714,7 @@ footer {
     align-items: center;
     gap: 6rem;
     border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent,#ff4500,transparent) 1;
+    border-image: linear-gradient(to right, transparent, #ff4500, transparent) 1;
 }
 
 #redes-sociais,
@@ -724,8 +750,33 @@ footer {
 
 
 
-#redes-sociais a:hover, .fa-linkedin:hover{
+#redes-sociais a:hover,
+.fa-linkedin:hover {
     color: #ff4500;
+}
+
+/*area de agradecimento do email*/
+.thanks-nav{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    box-sizing: border-box;
+    justify-content: end;
+    align-items: center;
+    box-shadow: 1 1 1 black;
+}
+
+.thanks{
+    margin: 0;
+    height: 100vh;
+    display: block;
+    text-align: center;
+}
+
+.thanks h2{
+    color: #da3a00;
 }
 
 @media(max-width:998px) {
@@ -741,7 +792,7 @@ footer {
         margin-right: 0.5em;
     }
 
-    #sobre-image{
+    #sobre-image {
         margin-right: 4em;
     }
 
@@ -796,9 +847,10 @@ footer {
         margin-right: 5em;
     }
 
-    #sobre{
+    #sobre {
         height: auto;
     }
+
     #sobre-container {
         display: block;
 
@@ -807,7 +859,7 @@ footer {
     #sobre-image {
         margin: auto auto;
         height: 100%;
-        margin-bottom:15px;
+        margin-bottom: 15px;
         background-position: initial;
     }
 
@@ -856,7 +908,7 @@ footer {
 
     }
 
-    .projeto-text{
+    .projeto-text {
         font-size: 1.3em;
     }
 }
@@ -866,7 +918,7 @@ footer {
         font-size: 70%;
     }
 
-    #navbar{
+    #navbar {
         justify-content: end;
     }
 
@@ -957,9 +1009,10 @@ footer {
         margin-top: 5em;
     }
 
-    #sobre{
+    #sobre {
         height: auto;
     }
+
     #sobre-image {
         width: 250px;
         height: 407px;
@@ -981,49 +1034,54 @@ footer {
         height: auto;
     }
 
-    #skills{
+    #skills {
         justify-content: center;
     }
 
-    #descrition-skills{
+    #descrition-skills {
         width: 100%;
     }
 
-    #descrition-skills img{
+    #descrition-skills img {
         width: 20px;
     }
-    #skills-logo{
+
+    #skills-logo {
         display: none;
     }
 
-    #qualificacoes img{
+    #qualificacoes img {
         width: 300px;
         height: 200px;
     }
+
     #mensagem-contato {
         width: 250px;
         height: auto;
     }
 
-    .projetos img{
+    .projetos img {
         width: 300px;
         height: 150px;
     }
-    .projeto-text{
+
+    .projeto-text {
         font-size: 1.3em;
         height: 100%;
     }
 
-    #qualificacoes, #projetos, #contato{
+    #qualificacoes,
+    #projetos,
+    #contato {
         margin-top: 3em;
         height: auto;
     }
 
-    #qualificacoes{
-       padding:3em;
+    #qualificacoes {
+        padding: 3em;
     }
 
-    footer #endereco{
+    footer #endereco {
         display: none;
     }
 

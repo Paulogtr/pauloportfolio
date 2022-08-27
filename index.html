@@ -12,7 +12,7 @@
     </style>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Paulo Henrique</title>
+    <title>Portfólio Paulo Henrique</title>
 </head>
 
 <body id="color">
@@ -222,19 +222,21 @@
             <!-- Section Contato-->
             <section id="contato">
                 <h2>Contato</h2>
-                <form>
+                <form action="https://formsubmit.co/4cc6fda945cef501ecd30c4fcf0b8bc4" method="post">
                     <div class="name-contato" for="name-contato">
                         <label for="name-contato">Nome Completo:</label>
-                        <p><input type="text" name="name-contato" id="name-contato" autocomplete="off"></p>
+                        <p><input type="text" name="name-contato" id="name-contato"  required ></p>
                     </div>
                     <div class="email-contato">
                         <label for="email-contato">Seu email:</label>
-                        <p><input type="email" name="email-contato" id="email-contato" autocomplete="off"></p>
+                        <p><input type="email" name="email-contato" id="email-contato" required></p>
                     </div>
                     <div class="mensagem-contato">
                         <label for="email-contato">Digite aqui sua mensagem:</label>
                         <textarea name="mensagem-contato" id="mensagem-contato" cols="30" rows="10"></textarea>
                     </div>
+                    <input type="hidden" name="_next" value="https://paulogtr.github.io/portfolio/thanks.html">
+                    <button type="submit">Enviar</button>
                 </form>
             </section>
         </main>

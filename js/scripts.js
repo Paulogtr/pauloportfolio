@@ -87,7 +87,6 @@ function scrollBar() {
     const scroll = document.querySelector('.gallery-wrapper');
     const controlR = document.querySelector('.arrow-right');
     const controlL = document.querySelector('.arrow-left');
-    const item = document.querySelectorAll('.item')
 
     controlR.addEventListener('click', function () {
 
@@ -114,16 +113,16 @@ const img = document.querySelectorAll('.imgs-certificados img');
 
 let idx = 0;
 
-function carrossel(){
+function carrossel() {
     idx++;
 
-    if(idx > img.length -1){
+    if (idx > img.length - 1) {
         idx = 0;
     }
     imgs.style.transform = `translateX(${-idx * 312}px)`
 }
 
- setInterval(carrossel,5000)
+setInterval(carrossel, 5000)
 
 //chamada dos eventos
 

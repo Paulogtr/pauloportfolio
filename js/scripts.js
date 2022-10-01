@@ -41,7 +41,6 @@ btnBackgroundColor.addEventListener('click', function () {
         titulo.style.color = 'orangered';
         subtitulo.style.color = '#000';
         logo.style.color = '#f0f0ff';
-        textoSobre.style.color = '#000';
         backSobre.style.background = '#f0f0ff'
         backLinksWeb.style.backgroundColor = '#f0f0ff';
         backProjetos.style.backgroundColor = '#f0f0ff';
@@ -99,10 +98,6 @@ function scrollBar() {
     })
 
 }
-
-
-
-
 
 //Alerta de desenvolvimento
 function faseDesenvolvimento() { setTimeout(() => alert('Portfolio em fase de desenvolvimeno'), 5000) }

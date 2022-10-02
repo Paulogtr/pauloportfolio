@@ -28,32 +28,25 @@ function iniciarWrite() {
 
 //mudança do background da pagina
 btnBackgroundColor.addEventListener('click', function () {
+    bodyColor.classList.toggle('page_white')
     const textoSobre = document.querySelector('#sobre p');
     const backSobre = document.querySelector('#sobre');
     const backLinksWeb = document.querySelector('#links-web')
-    const backProjetos = document.querySelector('#projetos')
-    const backProjetosImg = document.querySelectorAll(".projetos")
     const backQualificacoes = document.querySelector('#qualificacoes')
 
-    if (bodyColor.style.backgroundColor === 'rgb(0, 0, 0)') {
-        bodyColor.style.backgroundColor = '#f0f0ff';
+    if (bodyColor.classList.value === 'page_white') {
         navbar.style.color = 'orangered';
         titulo.style.color = 'orangered';
         subtitulo.style.color = '#000';
         logo.style.color = '#f0f0ff';
         backSobre.style.background = '#f0f0ff'
         backLinksWeb.style.backgroundColor = '#f0f0ff';
-        backProjetos.style.backgroundColor = '#f0f0ff';
-        backProjetos.style.border = 'none';
-        backProjetosImg.forEach((el) => {
-            el.style.backgroundColor = 'transparent'
-        })
+        // backProjetosImg.forEach((el) => { el.style.backgroundColor = 'transparent'})
         backQualificacoes.style.backgroundColor = '#f0f0ff';
         iconColor.classList.remove('fa-sun')
         iconColor.classList.add('fa-moon')
         iconColor.style.color = 'rgb(3, 107, 121)'
     } else {
-        bodyColor.style.backgroundColor = 'rgb(0, 0, 0)';
         titulo.style.color = '#f0f0ff';
         subtitulo.style.color = '#ff4500';
         logo.style.color = '#ff4500';
@@ -61,17 +54,14 @@ btnBackgroundColor.addEventListener('click', function () {
         textoSobre.style.color = '#f0f0ff';
         backSobre.style.background = 'radial-gradient(rgba(0, 225, 255, 0.379),black)';
         backLinksWeb.style.backgroundColor = '#000';
-        backProjetos.style.backgroundColor = '#000';
-        backProjetos.style.border = '';
-        backProjetosImg.forEach((el) => {
-            el.style.backgroundColor = 'rgb(2, 69, 78)'
-        })
+        // backProjetosImg.forEach((el) => { el.style.backgroundColor = 'rgb(2, 69, 78)'})
         backQualificacoes.style.backgroundColor = 'rgb(26, 25, 25)';
         iconColor.classList.remove('fa-moon')
         iconColor.classList.add('fa-sun')
         iconColor.style.color = ''
     }
 });
+
 
 
 //ação de clique do botão de display do menu mobile
